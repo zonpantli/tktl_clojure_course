@@ -1,0 +1,969 @@
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/127.0.0.1,port=0,localport=59715]>, :connections #<Ref@90a278: #{}>}
+
+FAIL at (test_core.clj:16)
+    Expected: [[0 1 2] "Fetching http://cs.helsinki.fi/u/ivacklin/clojure-0.txt\nFetching http://cs.helsinki.fi/u/ivacklin/clojure-1.txt\nFetching http://cs.helsinki.fi/u/ivacklin/clojure-2.txt\n"]
+      Actual: [(0 1 2) "Fetching  http://cs.helsinki.fi/u/ivacklin/clojure-0.txt\nFetching  http://cs.helsinki.fi/u/ivacklin/clojure-1.txt\nFetching  http://cs.helsinki.fi/u/ivacklin/clojure-2.txt\n"]
+
+FAIL at (test_core.clj:22)
+    Expected: [nil "0\n1\n4\n9\n"]
+      Actual: [":(" ""]
+
+FAIL at (test_core.clj:27)
+    Expected: 6
+      Actual: ":("
+
+FAIL at (test_core.clj:28)
+    Expected: 12
+      Actual: ":("
+
+FAIL at (test_core.clj:29)
+    Expected: 60
+      Actual: ":("
+
+FAIL at (test_core.clj:30)
+    Expected: 60
+      Actual: ":("
+
+FAIL at (test_core.clj:31)
+    Expected: 420
+      Actual: ":("
+
+FAIL at (test_core.clj:32)
+    Expected: 840
+      Actual: ":("
+
+FAIL at (test_core.clj:33)
+    Expected: 27720
+      Actual: ":("
+
+FAIL at (test_core.clj:36)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:37)
+    Expected: [0 1 2]
+      Actual: ":("
+
+FAIL at (test_core.clj:38)
+    Expected: (0 1 2 3 4 5 6 7 8 9)
+      Actual: (\: \()
+
+FAIL at (test_core.clj:41)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just empty? [1] [1 2] [1 2 3] [1 2 3 4])
+    The checker said this about the reason:
+       Expected five elements. There were two.
+
+FAIL at (test_core.clj:42)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just empty? [0] [0 1] [0 1 2] [0 1 2 3])
+    The checker said this about the reason:
+       Expected five elements. There were two.
+
+FAIL at (test_core.clj:45)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1] [1 1])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:47)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3] [6])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [0 1 2 3 4 5 6 7 8 9] [0 1 2 3 4 5 6 7 8 9])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:51)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1 2 4 8 16] [30 2])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:55)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3 4] [2 3 4] [3 4] [4])
+    The checker said this about the reason:
+       Expected four elements. There were two.
+
+FAIL at (test_core.clj:58)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.StringIndexOutOfBoundsException: String index out of range: 5
+              laziness.test_core$eval3378$fn__3383.invoke(test_core.clj:58)
+              laziness.test_core$eval3378.invoke(test_core.clj:54)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just [5 6 7 8 9 10 11 12 13 14])
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<StringIndexOutOfBoundsException java.lang.StringIndexOutOfBoundsException: String index out of range: 5>} is a map, [5 6 7 8 9 10 11 12 13 14] should look like map entries.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2] [1] [2]] :in-any-order)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2 3 4] [1 2 3] [1 2] [1] [2 3 4] [2 3] [2] [3 4] [3] [4]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:69)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 0)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:70)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 2 3 4)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:71)
+    Expected: nil
+      Actual: ":("
+
+FAIL at (test_core.clj:72)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (pred-or (just [4 5 6 7 8 9]) (just [12 13 14]) (just [39]))
+
+FAIL at (test_core.clj:78)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just [[0] [0 1] [1] [0 1 2] [1 2] [2] [0 1 2 3] [1 2 3] [2 3] [3]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:81)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [4 5 6 7 8 9] :in-any-order)
+    The checker said this about the reason:
+       Expected six elements. There were two.
+
+FAIL at (test_core.clj:22)
+    Expected: [nil "0\n1\n4\n9\n"]
+      Actual: [":(" ""]
+
+FAIL at (test_core.clj:27)
+    Expected: 6
+      Actual: ":("
+
+FAIL at (test_core.clj:28)
+    Expected: 12
+      Actual: ":("
+
+FAIL at (test_core.clj:29)
+    Expected: 60
+      Actual: ":("
+
+FAIL at (test_core.clj:30)
+    Expected: 60
+      Actual: ":("
+
+FAIL at (test_core.clj:31)
+    Expected: 420
+      Actual: ":("
+
+FAIL at (test_core.clj:32)
+    Expected: 840
+      Actual: ":("
+
+FAIL at (test_core.clj:33)
+    Expected: 27720
+      Actual: ":("
+
+FAIL at (test_core.clj:36)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:37)
+    Expected: [0 1 2]
+      Actual: ":("
+
+FAIL at (test_core.clj:38)
+    Expected: (0 1 2 3 4 5 6 7 8 9)
+      Actual: (\: \()
+
+FAIL at (test_core.clj:41)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just empty? [1] [1 2] [1 2 3] [1 2 3 4])
+    The checker said this about the reason:
+       Expected five elements. There were two.
+
+FAIL at (test_core.clj:42)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just empty? [0] [0 1] [0 1 2] [0 1 2 3])
+    The checker said this about the reason:
+       Expected five elements. There were two.
+
+FAIL at (test_core.clj:45)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1] [1 1])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:47)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3] [6])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [0 1 2 3 4 5 6 7 8 9] [0 1 2 3 4 5 6 7 8 9])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:51)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1 2 4 8 16] [30 2])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:55)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3 4] [2 3 4] [3 4] [4])
+    The checker said this about the reason:
+       Expected four elements. There were two.
+
+FAIL at (test_core.clj:58)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.StringIndexOutOfBoundsException: String index out of range: 5
+              laziness.test_core$eval3988$fn__3993.invoke(test_core.clj:58)
+              laziness.test_core$eval3988.invoke(test_core.clj:54)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just [5 6 7 8 9 10 11 12 13 14])
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<StringIndexOutOfBoundsException java.lang.StringIndexOutOfBoundsException: String index out of range: 5>} is a map, [5 6 7 8 9 10 11 12 13 14] should look like map entries.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2] [1] [2]] :in-any-order)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2 3 4] [1 2 3] [1 2] [1] [2 3 4] [2 3] [2] [3 4] [3] [4]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:69)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 0)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:70)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 2 3 4)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:71)
+    Expected: nil
+      Actual: ":("
+
+FAIL at (test_core.clj:72)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (pred-or (just [4 5 6 7 8 9]) (just [12 13 14]) (just [39]))
+
+FAIL at (test_core.clj:78)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just [[0] [0 1] [1] [0 1 2] [1 2] [2] [0 1 2 3] [1 2 3] [2 3] [3]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:81)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [4 5 6 7 8 9] :in-any-order)
+    The checker said this about the reason:
+       Expected six elements. There were two.
+
+FAIL at (test_core.clj:27)
+    Expected: 6
+      Actual: ":("
+
+FAIL at (test_core.clj:28)
+    Expected: 12
+      Actual: ":("
+
+FAIL at (test_core.clj:29)
+    Expected: 60
+      Actual: ":("
+
+FAIL at (test_core.clj:30)
+    Expected: 60
+      Actual: ":("
+
+FAIL at (test_core.clj:31)
+    Expected: 420
+      Actual: ":("
+
+FAIL at (test_core.clj:32)
+    Expected: 840
+      Actual: ":("
+
+FAIL at (test_core.clj:33)
+    Expected: 27720
+      Actual: ":("
+
+FAIL at (test_core.clj:36)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:37)
+    Expected: [0 1 2]
+      Actual: ":("
+
+FAIL at (test_core.clj:38)
+    Expected: (0 1 2 3 4 5 6 7 8 9)
+      Actual: (\: \()
+
+FAIL at (test_core.clj:41)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just empty? [1] [1 2] [1 2 3] [1 2 3 4])
+    The checker said this about the reason:
+       Expected five elements. There were two.
+
+FAIL at (test_core.clj:42)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just empty? [0] [0 1] [0 1 2] [0 1 2 3])
+    The checker said this about the reason:
+       Expected five elements. There were two.
+
+FAIL at (test_core.clj:45)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1] [1 1])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:47)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3] [6])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [0 1 2 3 4 5 6 7 8 9] [0 1 2 3 4 5 6 7 8 9])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:51)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1 2 4 8 16] [30 2])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:55)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3 4] [2 3 4] [3 4] [4])
+    The checker said this about the reason:
+       Expected four elements. There were two.
+
+FAIL at (test_core.clj:58)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.StringIndexOutOfBoundsException: String index out of range: 5
+              laziness.test_core$eval4388$fn__4393.invoke(test_core.clj:58)
+              laziness.test_core$eval4388.invoke(test_core.clj:54)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just [5 6 7 8 9 10 11 12 13 14])
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<StringIndexOutOfBoundsException java.lang.StringIndexOutOfBoundsException: String index out of range: 5>} is a map, [5 6 7 8 9 10 11 12 13 14] should look like map entries.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2] [1] [2]] :in-any-order)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2 3 4] [1 2 3] [1 2] [1] [2 3 4] [2 3] [2] [3 4] [3] [4]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:69)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 0)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:70)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 2 3 4)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:71)
+    Expected: nil
+      Actual: ":("
+
+FAIL at (test_core.clj:72)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (pred-or (just [4 5 6 7 8 9]) (just [12 13 14]) (just [39]))
+
+FAIL at (test_core.clj:78)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just [[0] [0 1] [1] [0 1 2] [1 2] [2] [0 1 2 3] [1 2 3] [2 3] [3]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:81)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [4 5 6 7 8 9] :in-any-order)
+    The checker said this about the reason:
+       Expected six elements. There were two.
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/127.0.0.1,port=0,localport=38188]>, :connections #<Ref@84639c: #{}>}
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/127.0.0.1,port=0,localport=29575]>, :connections #<Ref@c24ae7: #{}>}
+
+FAIL at (test_core.clj:41)
+Actual result did not agree with the checking function.
+        Actual result: nil
+    Checking function: (just empty? [1] [1 2] [1 2 3] [1 2 3 4])
+    The checker said this about the reason:
+       You can't compare nil () to [#<core$empty_QMARK_ clojure.core$empty_QMARK_@5310e4> [1] [1 2] [1 2 3] [1 2 3 4]] (class clojure.lang.PersistentVector).
+
+FAIL at (test_core.clj:42)
+Actual result did not agree with the checking function.
+        Actual result: ()
+    Checking function: (just empty? [0] [0 1] [0 1 2] [0 1 2 3])
+    The checker said this about the reason:
+       Expected five elements. There were zero.
+
+FAIL at (test_core.clj:45)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1] [1 1])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:47)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3] [6])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [0 1 2 3 4 5 6 7 8 9] [0 1 2 3 4 5 6 7 8 9])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:51)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1 2 4 8 16] [30 2])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:55)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3 4] [2 3 4] [3 4] [4])
+    The checker said this about the reason:
+       Expected four elements. There were two.
+
+FAIL at (test_core.clj:58)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.StringIndexOutOfBoundsException: String index out of range: 5
+              laziness.test_core$eval3237$fn__3242.invoke(test_core.clj:58)
+              laziness.test_core$eval3237.invoke(test_core.clj:54)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just [5 6 7 8 9 10 11 12 13 14])
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<StringIndexOutOfBoundsException java.lang.StringIndexOutOfBoundsException: String index out of range: 5>} is a map, [5 6 7 8 9 10 11 12 13 14] should look like map entries.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2] [1] [2]] :in-any-order)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2 3 4] [1 2 3] [1 2] [1] [2 3 4] [2 3] [2] [3 4] [3] [4]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:69)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 0)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:70)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 2 3 4)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:71)
+    Expected: nil
+      Actual: ":("
+
+FAIL at (test_core.clj:72)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (pred-or (just [4 5 6 7 8 9]) (just [12 13 14]) (just [39]))
+
+FAIL at (test_core.clj:78)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just [[0] [0 1] [1] [0 1 2] [1 2] [2] [0 1 2 3] [1 2 3] [2 3] [3]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:81)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [4 5 6 7 8 9] :in-any-order)
+    The checker said this about the reason:
+       Expected six elements. There were two.
+
+FAIL at (test_core.clj:41)
+Actual result did not agree with the checking function.
+        Actual result: (() (1) (1 2) (1 2 3))
+    Checking function: (just empty? [1] [1 2] [1 2 3] [1 2 3 4])
+    The checker said this about the reason:
+       Expected five elements. There were four.
+
+FAIL at (test_core.clj:45)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1] [1 1])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:47)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3] [6])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [0 1 2 3 4 5 6 7 8 9] [0 1 2 3 4 5 6 7 8 9])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:51)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 1 2 4 8 16] [30 2])
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:55)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3 4] [2 3 4] [3 4] [4])
+    The checker said this about the reason:
+       Expected four elements. There were two.
+
+FAIL at (test_core.clj:58)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.StringIndexOutOfBoundsException: String index out of range: 5
+              laziness.test_core$eval3665$fn__3670.invoke(test_core.clj:58)
+              laziness.test_core$eval3665.invoke(test_core.clj:54)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just [5 6 7 8 9 10 11 12 13 14])
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<StringIndexOutOfBoundsException java.lang.StringIndexOutOfBoundsException: String index out of range: 5>} is a map, [5 6 7 8 9 10 11 12 13 14] should look like map entries.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2] [1] [2]] :in-any-order)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2 3 4] [1 2 3] [1 2] [1] [2 3 4] [2 3] [2] [3 4] [3] [4]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:69)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 0)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:70)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 2 3 4)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:71)
+    Expected: nil
+      Actual: ":("
+
+FAIL at (test_core.clj:72)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (pred-or (just [4 5 6 7 8 9]) (just [12 13 14]) (just [39]))
+
+FAIL at (test_core.clj:78)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just [[0] [0 1] [1] [0 1 2] [1 2] [2] [0 1 2 3] [1 2 3] [2 3] [3]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:81)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [4 5 6 7 8 9] :in-any-order)
+    The checker said this about the reason:
+       Expected six elements. There were two.
+[INFO] snapshot org.clojure.contrib:core:1.3.0-SNAPSHOT: checking for updates from maven
+[INFO] snapshot org.clojure.contrib:parent:1.3.0-SNAPSHOT: checking for updates from maven
+[INFO] snapshot org.clojure.contrib:def:1.3.0-SNAPSHOT: checking for updates from maven
+[INFO] snapshot criterium:criterium:0.0.1-SNAPSHOT: checking for updates from maven
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/127.0.0.1,port=0,localport=56491]>, :connections #<Ref@331dd0: #{}>}
+
+FAIL at (test_core.clj:55)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [1 2 3 4] [2 3 4] [3 4] [4])
+    The checker said this about the reason:
+       Expected four elements. There were two.
+
+FAIL at (test_core.clj:58)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.StringIndexOutOfBoundsException: String index out of range: 5
+              laziness.test_core$eval5569$fn__5574.invoke(test_core.clj:58)
+              laziness.test_core$eval5569.invoke(test_core.clj:54)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just [5 6 7 8 9 10 11 12 13 14])
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<StringIndexOutOfBoundsException java.lang.StringIndexOutOfBoundsException: String index out of range: 5>} is a map, [5 6 7 8 9 10 11 12 13 14] should look like map entries.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2] [1] [2]] :in-any-order)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2 3 4] [1 2 3] [1 2] [1] [2 3 4] [2 3] [2] [3 4] [3] [4]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:69)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 0)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:70)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 2 3 4)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:71)
+    Expected: nil
+      Actual: ":("
+
+FAIL at (test_core.clj:72)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (pred-or (just [4 5 6 7 8 9]) (just [12 13 14]) (just [39]))
+
+FAIL at (test_core.clj:78)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just [[0] [0 1] [1] [0 1 2] [1 2] [2] [0 1 2 3] [1 2 3] [2 3] [3]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:81)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [4 5 6 7 8 9] :in-any-order)
+    The checker said this about the reason:
+       Expected six elements. There were two.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2] [1] [2]] :in-any-order)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [[1 2 3 4] [1 2 3] [1 2] [1] [2 3 4] [2 3] [2] [3 4] [3] [4]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:69)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 0)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:70)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just 2 3 4)
+    The checker said this about the reason:
+       Expected three elements. There were two.
+
+FAIL at (test_core.clj:71)
+    Expected: nil
+      Actual: ":("
+
+FAIL at (test_core.clj:72)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (pred-or (just [4 5 6 7 8 9]) (just [12 13 14]) (just [39]))
+
+FAIL at (test_core.clj:78)
+Actual result did not agree with the checking function.
+        Actual result: (\: \()
+    Checking function: (just [[0] [0 1] [1] [0 1 2] [1 2] [2] [0 1 2 3] [1 2 3] [2 3] [3]] :in-any-order)
+    The checker said this about the reason:
+       Expected ten elements. There were two.
+
+FAIL at (test_core.clj:81)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just [4 5 6 7 8 9] :in-any-order)
+    The checker said this about the reason:
+       Expected six elements. There were two.
+
+FAIL at (test_core.clj:78)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.OutOfMemoryError: Java heap space
+              laziness.test_core$eval6918.invoke(test_core.clj:77)
+    Checking function: (just [[0] [0 1] [1] [0 1 2] [1 2] [2] [0 1 2 3] [1 2 3] [2 3] [3]] :in-any-order)
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<OutOfMemoryError java.lang.OutOfMemoryError: Java heap space>} is a map, [[0] [0 1] [1] [0 1 2] [1 2] [2] [0 1 2 3] [1 2 3] [2 3] [3]] should look like map entries.
+
+FAIL at (test_core.clj:81)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.OutOfMemoryError: Java heap space
+              laziness.core$subseq_sum$fn__6776.invoke(core.clj:52)
+              laziness.core$subseq_sum.invoke(core.clj:52)
+              laziness.test_core$eval6918$fn__6921.invoke(test_core.clj:81)
+              laziness.test_core$eval6918.invoke(test_core.clj:77)
+    Checking function: (just [4 5 6 7 8 9] :in-any-order)
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<OutOfMemoryError java.lang.OutOfMemoryError: Java heap space>} is a map, [4 5 6 7 8 9] should look like map entries.

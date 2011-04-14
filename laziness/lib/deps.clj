@@ -1,0 +1,1 @@
+{:dependencies {clojure {:version "1.2.0"}, midje {:version "1.0.1"}}, :dev-dependencies {swank-clojure {:version "1.2.1"}, lein-cdt {:version "1.0.0"}, criterium {:version "0.0.1-SNAPSHOT"}}, :ext-dependencies {}}
