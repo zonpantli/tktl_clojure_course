@@ -1,0 +1,505 @@
+commit 4e81fb3e718df1859e695b9531d8758ee84f0e55
+Author: Miika Pihlaja <zonpantli@gmail.com>
+Date:   Wed Feb 9 16:17:53 2011 +0200
+
+    (repeat commit)
+
+commit 60255e96c88b086f5f3a0cec6c9895d820ed7704
+Merge: 8848031... a140c1f...
+Author: Miika Pihlaja <zonpantli@gmail.com>
+Date:   Wed Feb 9 14:09:58 2011 +0200
+
+    garrrr
+
+commit 8848031f74b241af970309eed6061034695907b1
+Author: Miika Pihlaja <zonpantli@gmail.com>
+Date:   Wed Feb 9 14:03:57 2011 +0200
+
+    mmm
+
+commit a140c1fcb86b2b8d4dd5c8f42837a23b3b51984e
+Merge: 77e31a5... e9db9a0...
+Author: Miika Pihlaja <miika.pihlaja@helsinki.fi>
+Date:   Wed Feb 9 10:58:11 2011 +0200
+
+    uusimmat testit
+
+commit e9db9a005f2f883dfe4df1ba2e155c9f022e0dc5
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Tue Feb 8 01:56:39 2011 +0200
+
+    Don't assume (main) printed anything
+
+commit b510cc2e4288f9814829927a32d2e0f8af610f2b
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Tue Feb 8 01:30:27 2011 +0200
+
+    Do not expect + 1 2 3 to work
+
+commit 6161e6e9a71767e17d5cfcf88011944c7083e6c1
+Author: Ilmari Vacklin <ilmari.vacklin@gmail.com>
+Date:   Tue Feb 8 01:17:56 2011 +0200
+
+    Fix Bowser test
+
+commit 3380aa6bc853581143d4a088e169637f65319732
+Author: Joel Kaasinen <joel.kaasinen@gmail.com>
+Date:   Mon Feb 7 22:40:59 2011 +0200
+
+    fix Bowser test
+
+commit 77e31a5beea208d2c0704ac3d024680f37b74720
+Author: Miika Pihlaja <miika.pihlaja@helsinki.fi>
+Date:   Mon Feb 7 22:06:31 2011 +0200
+
+    after juggling the tests...
+
+commit a629aac392605bcd6af80dda2f03bd9abc8a5808
+Author: Joel Kaasinen <joel.kaasinen@gmail.com>
+Date:   Mon Feb 7 20:32:33 2011 +0200
+
+    retry fixing tests...
+
+commit f85c2e7d6f0a8fd469437d8df2ae4ae414088d97
+Author: Miika Pihlaja <miika.pihlaja@helsinki.fi>
+Date:   Mon Feb 7 20:32:07 2011 +0200
+
+    further messing around with calculatrix
+
+commit 8c9ef2d88780aa92d79bcd2da9c5a993a546b0a8
+Author: Joel Kaasinen <joel.kaasinen@gmail.com>
+Date:   Mon Feb 7 19:10:31 2011 +0200
+
+    fix read-words
+
+commit 787c1a8b199e1a1361a8e1718472cbb1f0c82ce1
+Author: Miika Pihlaja <zonpantli@gmail.com>
+Date:   Mon Feb 7 01:42:29 2011 +0200
+
+    cleaning up Calculatrix
+
+commit 6fee4df00cb8b67bc630b939052d1291111cec47
+Author: Miika Pihlaja <pihlaja@iki.fi>
+Date:   Mon Feb 7 01:23:19 2011 +0200
+
+    Calculatrix: all tests pass, but variable num args not implemented properly
+
+commit 340b517234c457b2ecef48df46fd51380aa02420
+Author: Miika Pihlaja <pihlaja@iki.fi>
+Date:   Sun Feb 6 22:06:55 2011 +0200
+
+    calculatrix up to Manfred von Karma
+
+commit e83613613b5df8643ec0b3577ab4fc3176bdccea
+Author: Miika Pihlaja <pihlaja@iki.fi>
+Date:   Sun Feb 6 19:09:34 2011 +0200
+
+    recursion done
+
+commit 078c26fc2f1c1bc4b4642448599de55b1e882a48
+Author: Joel Kaasinen <joel.kaasinen@gmail.com>
+Date:   Thu Feb 3 15:29:41 2011 +0200
+
+    more tests for rotations
+
+commit 3768de988c0de350c1ca71bb866593518be4719c
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Thu Feb 3 02:06:40 2011 +0200
+
+    fix rotations tests again, thanks cyberix!
+
+commit 9fe86e84060e52ae8c3700c273bb9150b7e855ae
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Thu Feb 3 01:46:34 2011 +0200
+
+    fix facts for rotations (thanks to cyberix)
+
+commit 435b04a74044f87d0c9a765c6fab9ffb4a2ea5b3
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Thu Feb 3 01:33:36 2011 +0200
+
+    fix Bowser facts (Calculatrix)
+
+commit c6a40d4a7b57e8af3845c13ed4f7022c5c4d32fc
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Thu Feb 3 00:56:35 2011 +0200
+
+    fix rotations facts (Recursion)
+
+commit dfd3e469df87ab38b8a88df80f17c03251d7cea9
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Thu Feb 3 00:56:20 2011 +0200
+
+    Fact: store a 42\nstore b a should work
+
+commit d12a94feb5baea31b9fb39acf300465bcd7b2475
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Thu Feb 3 00:55:15 2011 +0200
+
+    Fix 1.5 -> 3/2 in a Godot fact
+
+commit dbb27c7c6ac31a0b36824273ab1c9e43a24d443d
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Thu Feb 3 00:54:26 2011 +0200
+
+    Remove non-end-to-end facts
+
+commit 1cad57195c77c7d8fc0f04b5092c4d945914eb4d
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Thu Feb 3 00:54:07 2011 +0200
+
+    Add a fact for read-words
+
+commit 2d0afa0a7cabb1e9af6ac521b86bd978a106f128
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Thu Feb 3 00:51:51 2011 +0200
+
+    Add a newline to main input
+
+commit 5b4d042a311722759ff847a779fe91972861e5ae
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Wed Feb 2 22:29:28 2011 +0200
+
+    add calculatrix facts
+
+commit efb09e34482791e3d14805657e777feb637e8fb9
+Author: Joel Kaasinen <joel.kaasinen@gmail.com>
+Date:   Thu Feb 3 00:41:18 2011 +0200
+
+    monotonic-prefix
+
+commit 7f958f21171811f6e3dbb2560f84e4a608885fca
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Wed Feb 2 21:37:52 2011 +0200
+
+    Add tests for calculatrix
+
+commit cb95fe3d5a64be143f58ad4a6311f26fb1f8ed1d
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Wed Feb 2 21:37:18 2011 +0200
+
+    Make compute not throw an exception on invalid input
+
+commit 14ea4b2a3351ed8384548f8576a03b101f9fc6f0
+Author: Ilmari Vacklin <ilmari.vacklin@cs.helsinki.fi>
+Date:   Wed Feb 2 21:37:00 2011 +0200
+
+    Fix read-words to not return empty strings
+
+commit 321612747f2bc644470da5af41d131c47da086e0
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 21:50:14 2011 +0200
+
+    fact for read-words (Calculatrix)
+
+commit 49d2b111aaada46d3e7fe912f9fb2f3dfa84b3c8
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 21:41:33 2011 +0200
+
+    initial impl and facts for calculatrix (Recursion)
+
+commit 2695838e0d90371cb0a6640f2e2e1e65ae34ea8a
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 21:38:41 2011 +0200
+
+    fix facts for powerset (Recursion)
+
+commit c9057be07ba0fa582a8d1a567452a1a205c6a24b
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 21:24:17 2011 +0200
+
+    facts for powerset (Recursion)
+
+commit c543bb6e3a324102e2831e42da883dcafc1d2c8d
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 21:18:48 2011 +0200
+
+    fixed facts for permutations (Recursion)
+
+commit 730e7496661f300e9b2650cbb44980144a5c678f
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 20:43:51 2011 +0200
+
+    facts for permutations (Recursion)
+
+commit 58de772ea79a8be356bdb394b072c3868a6d216e
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 19:21:15 2011 +0200
+
+    fixed fact for mergesort (Recursion)
+
+commit 6688d51f37c055aa02b5817168b82a8a8f382c15
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 19:06:20 2011 +0200
+
+    facts for mergesort (Recursion)
+
+commit 6b133687803ce1300dad8ff7bceac4dd74082f5a
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 18:47:58 2011 +0200
+
+    facts for seq-merge (Recursion)
+
+commit 2d7b8d3f63eb9e0e1d52b15d6c4031a1b5b9d742
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 18:26:37 2011 +0200
+
+    order doesn't matter in un-frequencies (Recursion)
+
+commit f2d79c80ce3de46b9722ee66215a0f2653829d71
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 18:23:30 2011 +0200
+
+    facts for un-frequencies (Recursion)
+
+commit b978aa5b3fa870c4833a0167da11b1c8787ad5e2
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 18:04:47 2011 +0200
+
+    consistency in frequency parameter names (Recursion)
+
+commit 04e4fdb87fbd1bb4effce21a6cbf85b1d2e6ed5b
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 18:03:33 2011 +0200
+
+    my-frequencies has the body given in material (Recursion)
+
+commit 260055aed5109044059230595601f2f437dae822
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 17:58:35 2011 +0200
+
+    namechange frequencies->my-frequencies (Recursion)
+
+commit 407139c42d8ccfc7c604662465923ff576870180
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 17:08:34 2011 +0200
+
+    fixed a fact for rotations (Recursion)
+
+commit aa2082215ffc5387c1920d0db9ebb967a08ded9f
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 16:44:24 2011 +0200
+
+    facts for rotations (Recursion)
+
+commit ff3e1eaf6789c1862eeedab071b670c1b3cc4d2c
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 00:46:09 2011 +0200
+
+    fixed facts for split-into-monotonics (Recursion)
+
+commit 07964bd77a67236ff169b695d6f8b929cb8a2468
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 00:16:06 2011 +0200
+
+    facts for split-into-monotonics (Recursion)
+
+commit 2b0b9134ad716a13d1a1e3090df5465ebda469ff
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Tue Feb 1 00:14:21 2011 +0200
+
+    fix tails and inits facts
+
+commit e8a956a9e1740f0ef2e0630705f376eb4baad2ce
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 23:51:48 2011 +0200
+
+    facts for tails and inits (Recursion)
+
+commit 91b2d2181696cc780e42ca74f037580d00ff1d1d
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 23:07:35 2011 +0200
+
+    fix to a fact for map-1 (Recursion)
+
+commit 9ca99be366fab88bc075feccf89412f9c1c5811f
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 23:04:32 2011 +0200
+
+    facts for map-1
+
+commit 3e8b507381e391471a6c7249f40e6e24f03a0ea0
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 22:05:53 2011 +0200
+
+    facts for my-range (Recursion)
+
+commit 3ed9ef6eb8a6862e1b58d22fff2c4089c5d21b91
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 22:02:58 2011 +0200
+
+    fix fib naming
+
+commit e9b0f7537f98eb70ede07febbbada58029d85cc6
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 22:00:03 2011 +0200
+
+    facts for fibonacci (Recursion)
+
+commit 62bc432b776fde569c837565f3a29d99a2c45f66
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 21:49:16 2011 +0200
+
+    facts for power (Recursion)
+
+commit d463d0e88f1d9b7f97a9f1dfc6db58f3e31946f3
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 21:42:25 2011 +0200
+
+    facts for seq= (Recursion)
+
+commit 5e10b0a767b5698a34f6cee69979276d58357990
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 21:36:06 2011 +0200
+
+    facts for sequence-contains? (Recursion)
+
+commit e302f1e3b01e3955b4af0ddcb8256e325b1d2867
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 21:25:00 2011 +0200
+
+    facts for last-element (Recursion)
+
+commit b2a19191fb43128bfb3d3aeda807408fad04aba3
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 21:07:35 2011 +0200
+
+    fact for product (Recursion)
+
+commit 90259d4e351e1d5edf05d2156496b567240f41dc
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Mon Jan 31 20:56:18 2011 +0200
+
+    facts for transpose (Collections)
+
+commit 62c1660772d17bba38d23f9006148915f0dabbe1
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 23:42:45 2011 +0200
+
+    fact for add-at (Collections)
+
+commit 65905f0a4060ecf480355cbab3e86d8142883ca1
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 23:34:18 2011 +0200
+
+    fact for who-wrote
+
+commit 2b590a90fb96ef90cfe0bbfee77041e1369a45b1
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 23:20:47 2011 +0200
+
+    facts for exterminate
+
+commit 41a13deeeb2659a559ec51b8f4fe4c684e67a16f
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 14:03:27 2011 +0200
+
+    fact for author-birth-year (C10)
+
+commit 24c465d4b3a1f61415fad5ec0543638658a208e9
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 13:44:02 2011 +0200
+
+    facts for my-keys (C9)
+
+commit 5daaa57bdaaa1de9f695cd20477ac678975a227a
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 13:31:19 2011 +0200
+
+    fixed a typo in a fact for author-to-string
+
+commit f08f77081464b772673c74973b926ed0af311ccf
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 13:24:07 2011 +0200
+
+    facts for author-to-string (C7)
+
+commit 91208dd65bd278980b8a32f02906e165a1b11045
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 04:11:07 2011 +0200
+
+    fact for book-to-string (C7)
+
+commit a0887a994cc192db893bd71846d3e4490ec320a8
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 03:51:21 2011 +0200
+
+    facts for take-3 (C6)
+
+commit 9108e09d22a28df6eca3aef738d072e44b47bb5a
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 00:41:27 2011 +0200
+
+    facts for monotonic? (C5)
+
+commit 216a4edb4039bbfcbaa867db477aff64265a1f32
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 00:29:14 2011 +0200
+
+    fact for snip (C4)
+
+commit 0423b53a433e5833548153f454426cf180aa1159
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 00:19:00 2011 +0200
+
+    facts for first-five-positives (C3)
+
+commit ae0cdea2f5615c0a2fb1d356864c200b69a47c03
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Thu Jan 27 00:07:49 2011 +0200
+
+    facts for halve (C2)
+
+commit 3a2ab37b692651fdaf4a35bb91936b6d39a69028
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Wed Jan 26 23:40:27 2011 +0200
+
+    facts for doublificate (C1)
+
+commit e52bc7556db621375273da48fede1f4532b24920
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Wed Jan 26 17:39:53 2011 +0200
+
+    facts for prime? (P6)
+
+commit c7e0e66e39541ab871af07b0e06478c13b228f15
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Wed Jan 26 17:29:56 2011 +0200
+
+    facts for first-value-for-key
+
+commit 34c730f9c44b59082f799d0a1e4188ca6d9b7ed4
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Wed Jan 26 17:15:51 2011 +0200
+
+    fixed a fact for every-book-has-a-title? (P4)
+
+commit 46ee2bcd0dd2cc0b2ae0855d029dfa111f239ccb
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Wed Jan 26 17:03:27 2011 +0200
+
+    facts for every-book-has-a-title? (P4)
+
+commit 3966d4897b344d29ac69c70099e84418f5478437
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Wed Jan 26 16:50:01 2011 +0200
+
+    facts for pred-and (P3)
+
+commit 9777ab2d1bad15d020595274a6b79a8e43b81f16
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Wed Jan 26 16:37:43 2011 +0200
+
+    empty-string? (P2) facts
+
+commit 35261baddabf39d990c5f774f69651e31d3dcd31
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Wed Jan 26 15:38:40 2011 +0200
+
+    Tests for P1
+
+commit 873e89eb8f3ab938bb8d5db525948183ab2fba63
+Author: Juhana Laurinharju <fingerzam@gmail.com>
+Date:   Wed Jan 26 15:26:21 2011 +0200
+
+    initial commit
